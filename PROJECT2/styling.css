@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'outfit';
+    background-color: rgb(36, 43, 49);
+    /* background-image: url(TOBE-removebg-preview.png);
+    background-repeat: no-repeat; */
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#image1{
+    height: 100vh;
+    width: 600px;
+}
+.contactLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contactLeftTitle h1{
+ font-weight: 600px;
+ color: rgb(183, 46, 162);
+}
+.contactLeftTitle hr{
+ border: none;
+ width: 100px;
+ height: 2px;
+ background-color: rgb(32, 9, 69);
+ border-radius: 10px;
+
+}
+.contactInputs{
+    width: 300px;
+    height: 50px;
+    /* border: 2px white; */
+    /* border: 2px white; */
+    outline: none;
+    border: 2px rgb(33, 8, 8);
+    padding-left: 25px;
+    font-weight: 500;
+    color: rgb(212, 46, 185);
+    border-radius: 20px;
+    background: transparent;
+    
+        }
+        
+        .contactLeft textarea{
+            height: 150px;
+            padding-top: 20px;
+          }
+          .contactInputs:focus{
+            border: 2px solid rgb(78, 37, 110);
+
+          }
+          .contactLeft button{
+            display: flex;
+            align-items: centr;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: black;
+            gap: 10px;
+            border: none;
+            border-radius: 50px;
+            background-color: palevioletred;
+            cursor: pointer;
+          }
+        button:focus{
+            border: 2px solid rgb(78, 37, 110);
+        }
+        @media (max-width:486px) {
+            .contactInputs{
+                width: 200px;
+            }
+            .contactRight{
+                display: none;
+            }
+            
+        }
